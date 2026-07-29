@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conférence Product Management 2026</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <nav class="navbar">
+      <span class="logo">PM Conf</span>
+      <a href="#inscription" class="btn btn-outline">S'inscrire</a>
+    </nav>
+    <div class="hero-content">
+      <h1>La Conférence Product Management</h1>
+      <p class="hero-subtitle">Une journée pour explorer les meilleures pratiques du product management, échanger avec des experts et faire évoluer votre carrière.</p>
+      <div class="hero-meta">
+        <span>📅 18 septembre 2026</span>
+        <span>📍 Paris, France</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#inscription" class="btn btn-primary">Réserver ma place</a>
+        <a href="#programme" class="btn btn-outline">Voir le programme</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="a-propos">
+      <h2>Pourquoi participer ?</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Expertise</h3>
+          <p>Des intervenants reconnus partagent leurs retours d'expérience sur la stratégie produit, la découverte utilisateur et le pilotage par la donnée.</p>
+        </div>
+        <div class="card">
+          <h3>Networking</h3>
+          <p>Rencontrez des product managers, product owners et leaders produit venus de tous horizons.</p>
+        </div>
+        <div class="card">
+          <h3>Ateliers pratiques</h3>
+          <p>Des sessions interactives pour repartir avec des outils et méthodes applicables dès le lendemain.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="programme">
+      <h2>Programme</h2>
+      <ul class="programme-list">
+        <li><span class="time">9h00</span> Accueil café</li>
+        <li><span class="time">9h30</span> Keynote d'ouverture — Vision produit et stratégie</li>
+        <li><span class="time">11h00</span> Atelier — Découverte utilisateur et recherche produit</li>
+        <li><span class="time">13h00</span> Déjeuner networking</li>
+        <li><span class="time">14h30</span> Table ronde — Product management à l'ère de l'IA</li>
+        <li><span class="time">16h30</span> Clôture et cocktail</li>
+      </ul>
+    </section>
+
+    <section class="section" id="inscription">
+      <h2>Inscrivez-vous</h2>
+      <p class="section-intro">Réservez dès maintenant votre place pour la conférence.</p>
+
+      <form id="registration-form" action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST" novalidate>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="prenom">Prénom *</label>
+            <input type="text" id="prenom" name="prenom" required />
+          </div>
+          <div class="form-field">
+            <label for="nom">Nom *</label>
+            <input type="text" id="nom" name="nom" required />
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-field">
+          <label for="entreprise">Entreprise / Poste</label>
+          <input type="text" id="entreprise" name="entreprise" placeholder="Ex. : Product Manager chez Acme" />
+        </div>
+
+        <div class="form-field">
+          <label for="places">Nombre de places *</label>
+          <input type="number" id="places" name="places" min="1" value="1" required />
+        </div>
+
+        <div class="form-field">
+          <label for="notes">Notes complémentaires</label>
+          <textarea id="notes" name="notes" rows="4" placeholder="Allergies, besoins spécifiques, questions..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="submit-btn">S'inscrire</button>
+
+        <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Conférence Product Management — Contact : <a href="mailto:contact@pmconf.example">contact@pmconf.example</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
